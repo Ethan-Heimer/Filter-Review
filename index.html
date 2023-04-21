@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(33, 35, 40);
+
+            display: grid;
+            place-content: center;
+            gap: 1rem;
+
+            margin: 1rem;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .grayscale{
+            filter: grayscale(1);
+        }
+
+        .opacity-full{
+            filter: opacity(1);
+        }
+
+        .opacity-empty{
+            filter: opacity(0);
+        }
+
+        .opacity-half{
+            filter: opacity(.5);
+        }
+
+        .saturate{
+            filter: saturate(2);
+        }
+
+        .sepia{
+            filter:sepia(100%);
+        }
+
+        img{
+            width: 16rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img id="beach-image" class="grayscale" src="beach.jpg">
+        <img src="grayscale.PNG">
+    </div>
+
+    <div>
+        <img id="landscape" class="opacity-full" src="landscape.jpg">
+        <img src="opacity-full.PNG">
+    </div>
+
+    <div>
+        <img id="landscape" class="opacity-empty" src="landscape.jpg">
+        <img src="opacity-full.PNG">
+    </div>
+
+    <div>
+        <img id="landscape" class="opacity-half" src="landscape.jpg">
+        <img src="opacity-half.PNG">
+    </div>
+
+    <div>
+        <img id="landscape" class="saturate" src="landscape.jpg">
+        <img src="saturate.PNG">
+    </div>
+
+    <div>
+        <img id="landscape" class="grayscale" src="Sunset.jpg">
+        <img src="grayscale.PNG">
+    </div>
+
+    <div>
+        <img id="landscape" class="sepia" src="Sunset.jpg">
+        <img src="sepia.PNG">
+    </div>
+    
+</body>
+</html>
